@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="0.5dp"
+        android:background="#66757575" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_chevron_left_grey600_48dp" />
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="0.5dp"
+        android:background="#66757575" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_chevron_right_grey600_48dp" />
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="0.5dp"
+        android:background="#66757575" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_more_horiz_grey600_48dp" />
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="0.5dp"
+        android:background="#66757575" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_close_grey600_48dp" />
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="0.5dp"
+        android:background="#66757575" />
+
+    <ImageView
+        android:id="@+id/info"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_info_outline_grey600_48dp" />
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="0.5dp"
+        android:background="#66757575" />
+
+</LinearLayout>
