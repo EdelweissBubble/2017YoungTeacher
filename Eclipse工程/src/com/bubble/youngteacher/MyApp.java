@@ -17,6 +17,7 @@ import com.bubble.youngteacher.app.ScreenMultiTouch;
 import com.bubble.youngteacher.app.ScreenMusicPlayer;
 import com.bubble.youngteacher.app.ScreenNetWork;
 import com.bubble.youngteacher.app.ScreenShake;
+import com.bubble.youngteacher.app.ScreenShakeWeather;
 import com.bubble.youngteacher.app.ScreenVibrator;
 import com.bubble.youngteacher.app.ScreenViewPager;
 import com.bubble.youngteacher.model.FuncScreenModel;
@@ -76,6 +77,8 @@ public class MyApp extends Application {
 
 		funcList.add(new FuncScreenModel(6, "数据库操作", "Android SQLlite数据库基本操作，增删改查", ScreenDBOperation.class));
 		funcList.add(new FuncScreenModel(6, "后台服务", "创建一个Service，了解service基本启动方法及生命周期", ScreenCommonService.class));
+
+		funcList.add(new FuncScreenModel(8, "摇天气", "摇一摇获取实时天气", ScreenShakeWeather.class));
 
 	}
 

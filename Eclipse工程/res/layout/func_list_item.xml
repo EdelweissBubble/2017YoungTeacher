@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_vertical" >
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/blank_view"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:background="#EFEFF4" />
 
     <TextView
         android:id="@+id/title"
@@ -10,7 +18,7 @@
         android:layout_height="48dp"
         android:layout_marginLeft="20dp"
         android:gravity="center"
-        android:textSize="24sp"
-        android:text="UI设计" />
+        android:text="UI设计"
+        android:textSize="22sp" />
 
-</RelativeLayout>
+</LinearLayout>

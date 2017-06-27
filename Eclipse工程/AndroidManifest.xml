@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sict.shakedemo"
+    package="com.bubble.youngteacher"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="15"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="22" />
 
     <!-- 用于进行网络定位 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
@@ -40,24 +40,32 @@
     </uses-permission>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" >
     </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
 
     <application
         android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="6eae82348cb7272c3a1a0222a2230a15" >
+            android:value="075a6f2d9a0ce147d5d361f3cabc3d33" >
         </meta-data>
 
         <service android:name="com.amap.api.location.APSService" >
         </service>
+        <service android:name="com.bubble.youngteacher.service.CountService" >
+        </service>
 
         <activity
-            android:name="com.sict.shakedemo.app.MainActivity"
-            android:label="@string/app_name" >
+            android:name="com.bubble.youngteacher.app.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -65,20 +73,105 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.sict.shakedemo.app.ScreenMain"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
+            android:name="com.bubble.youngteacher.app.ScreenAbout"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="com.sict.shakedemo.app.ScreenLBS"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
+            android:name="com.bubble.youngteacher.app.ScreenContents"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="com.sict.shakedemo.app.ScreenShake"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
+            android:name="com.bubble.youngteacher.app.ScreenViewPager"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
         </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenImageSwitch3D"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenMusicPlayer"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenMultiTouch"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenGesture"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenBroadCast"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenClickEvent"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenLBS"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenShake"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenNetWork"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenDBOperation"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenCommonService"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenUseBrider"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenVibrator"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenGetContacts"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenContenProvider"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.bubble.youngteacher.app.ScreenShakeWeather"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <provider
+            android:name="com.bubble.youngteacher.model.EmployeeProvider"
+            android:authorities="com.bubble.provider.Employees"
+            android:exported="true" />
     </application>
 
 </manifest>
