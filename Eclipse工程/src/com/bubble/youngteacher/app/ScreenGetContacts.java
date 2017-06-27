@@ -1,6 +1,7 @@
 package com.bubble.youngteacher.app;
 
 import com.bubble.youngteacher.R;
+import com.bubble.youngteacher.utils.CommonUtils;
 import com.bubble.youngteacher.utils.LogUtils;
 import com.bubble.youngteacher.utils.NavigationBarUtils;
 
@@ -48,7 +49,7 @@ public class ScreenGetContacts extends BaseActivity implements View.OnClickListe
 		while (cursor.moveToNext()) {
 			String name = cursor.getString(0);
 			String number = cursor.getString(1);
-			LogUtils.e("获取到的数据：", "姓名：" + name + "，电话：" + number);
+			LogUtils.e("获取到的数据：", "姓名：" + name + "，电话：" + CommonUtils.handlePhoneNum(number));
 		}
 		cursor.close();
 	}
